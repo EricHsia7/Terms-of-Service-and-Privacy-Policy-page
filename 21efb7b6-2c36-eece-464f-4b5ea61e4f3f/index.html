@@ -38,7 +38,7 @@
   <script>
     $.ajax({
             type:"get",
-            url:location.href + 'index.md' ,
+            url:'index.md' ,
             dataType:"html",
             success:function(res){
             $('#privacyinner').html(marked(res));
