@@ -191,6 +191,10 @@ overflow: hidden;
  
   <script>
     var pws = "" ;
+    var getUrlString = location.href;
+var url = new URL(getUrlString);
+var key = url.searchParams.get('key');
+var c = url.searchParams.get('c');
     var promptchars = "0123456789abcdefghijklmnopqrstuvwxyz";
             for (var i = 0; i < 10; i++) {
                 var randomNumber = Math.floor(Math.random() * promptchars.length);
@@ -206,7 +210,7 @@ overflow: hidden;
   });
     function c() {
       if($('#one').prop("checked") === true && $('#two').prop("checked") === true) {
-        alert('ok!');
+        
       }
       else {
         alert('請先勾選同意。');
