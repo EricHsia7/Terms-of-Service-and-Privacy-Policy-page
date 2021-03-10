@@ -49,7 +49,7 @@
             url:'index.md?' + pws ,
             dataType:"html",
             success:function(res){
-            $('#privacyinner').html(marked(res)).append('<span><input type="checkbox">我已詳閱並同意服務條款</span><br><span><input type="checkbox">我已詳閱並同意隱私政策</span>');
+            $('#privacyinner').html(marked(res)).append('<span><input type="checkbox">我已詳閱並同意服務條款</span><br><span><input type="checkbox">我已詳閱並同意隱私政策</span><br><br>');
             }
         
   });
