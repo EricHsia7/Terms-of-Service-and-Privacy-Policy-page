@@ -193,7 +193,7 @@ overflow: hidden;
     var pws = "" ;
     var getUrlString = location.href;
 var url = new URL(getUrlString);
-var key = url.searchParams.get('key');
+var keyff = url.searchParams.get('key');
 var c = url.searchParams.get('c');
     var promptchars = "0123456789abcdefghijklmnopqrstuvwxyz";
             for (var i = 0; i < 10; i++) {
@@ -233,7 +233,7 @@ var c = url.searchParams.get('c');
     
     function c() {
       if($('#one').prop("checked") === true && $('#two').prop("checked") === true) {
-        location.href= bbb(c,key) ;
+        location.href= bbb(c,keyff) ;
       }
       else {
         alert('請先勾選同意。');
