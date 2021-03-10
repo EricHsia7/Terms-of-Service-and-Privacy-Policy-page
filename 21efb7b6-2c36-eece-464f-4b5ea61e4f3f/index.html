@@ -38,9 +38,15 @@
   
  
   <script>
+    var pws = "" ;
+    var promptchars = "0123456789abcdefghijklmnopqrstuvwxyz";
+            for (var i = 0; i < 10; i++) {
+                var randomNumber = Math.floor(Math.random() * promptchars.length);
+                pws += promptchars.substring(randomNumber, randomNumber + 1);
+            }
     $.ajax({
             type:"get",
-            url:'index.md' ,
+            url:'index.md?' + pws ,
             dataType:"html",
             success:function(res){
             $('#privacyinner').html(marked(res));
