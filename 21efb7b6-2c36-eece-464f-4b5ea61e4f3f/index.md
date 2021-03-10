@@ -48,5 +48,3 @@
 <br>
 [Github隱私政策](https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement)
 
-- [ ] 我已詳閱並同意服務條款
-- [ ] 我已詳閱並同意隱私政策
