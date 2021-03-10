@@ -49,7 +49,7 @@
             url:'index.md?' + pws ,
             dataType:"html",
             success:function(res){
-            $('#privacyinner').html(marked(res));
+            $('#privacyinner').html(marked(res)).append('接受服務條款');
             }
         
   });
