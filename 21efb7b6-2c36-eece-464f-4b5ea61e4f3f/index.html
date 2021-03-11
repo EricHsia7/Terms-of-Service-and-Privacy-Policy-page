@@ -18,6 +18,7 @@
     backdrop-filter: blur(15px);
     background: #fff;
     box-shadow:0 0 15px 1px rgba(0,0,0,0.05);
+    transition:0.5s;
 }
   .privacybg {
     width:100%;
@@ -228,4 +229,15 @@ var url = new URL(getUrlString);
         alert('請先勾選同意。');
       }
     }
+    
+    $(document).ready(function(){
+  $("#privacyinner").scroll(function() {
+    if($('#privacyinner').scrollTop() > 10) {
+      $('.privacytopbar').css({'height':'52px','font-size':'16px'});
+    }
+    else {
+      $('.privacytopbar').css({'height':'80px','font-size':'25px'});
+    }
+  });
+});
   </script>
