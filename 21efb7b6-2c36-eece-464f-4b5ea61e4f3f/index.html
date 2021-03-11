@@ -193,7 +193,7 @@ overflow: hidden;
 <div class="privacybg">
     <div id="privacyinner" style="padding:10px;position:absolute;top:52px;left:0px;height:calc(100% - 52px);width:clac(100% - 20px);overflow:scroll;font-family: 'Noto Sans TC', sans-serif;"></div>
   </div>
-  <div class="privacytopbar">服務條款與隱私政策</div>
+  <div class="privacytopbar"><z style="position:absolute;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);"服務條款與隱私政策</z></div>
 
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/aes-js/3.1.2/index.min.js"></script>
@@ -241,9 +241,11 @@ var url = new URL(getUrlString);
   $("#privacyinner").scroll(function() {
     if($('#privacyinner').scrollTop() > 10) {
       $('.privacytopbar').css({'height':'52px','font-size':'16px','font-weight':'500','box-shadow':'0 0 15px 1px rgba(0,0,0,0.05)'});
+      $('.privacytopbar z').css({'left':'50%','transform':'translateX(-50%) translateY(-50%)'});
     }
     else {
       $('.privacytopbar').css({'height':'80px','font-size':'25px','font-weight':'900','box-shadow':'0 0 15px 1px rgba(0,0,0,0)'});
+      $('.privacytopbar z').css({'left':'10px','transform':'translateX(-50%) translateY(-0%)'});
     }
   });
 });
