@@ -4,7 +4,7 @@
   <script src="https://erichsia7.github.io/Terms-of-Service-and-Privacy-Policy-page/marked.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&display=swap" rel="stylesheet">
 <style>
       .privacytopbar {
     width: 100%;
@@ -21,7 +21,7 @@
     box-shadow:0 0 15px 1px rgba(0,0,0,0.05);
     transition:0.5s;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight:400;
+    font-weight:500;
 }
   .privacybg {
     width:100%;
@@ -188,7 +188,7 @@ overflow: hidden;
 
 </style>
 <div class="privacybg">
-    <div id="privacyinner" style="padding:10px;position:absolute;top:52px;left:0px;height:calc(100% - 52px);width:clac(100% - 20px);overflow:scroll;"></div>
+    <div id="privacyinner" style="padding:10px;position:absolute;top:52px;left:0px;height:calc(100% - 52px);width:clac(100% - 20px);overflow:scroll;font-family: 'Noto Sans TC', sans-serif;"></div>
   </div>
   <div class="privacytopbar"><z style="transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;">服務條款與隱私政策</z></div>
 
@@ -237,7 +237,7 @@ var url = new URL(getUrlString);
     $(document).ready(function(){
   $("#privacyinner").scroll(function() {
     if($('#privacyinner').scrollTop() > 10) {
-      $('.privacytopbar').css({'height':'52px','font-size':'16px','font-weight':'400','box-shadow':'0 0 15px 1px rgba(0,0,0,0.05)'});
+      $('.privacytopbar').css({'height':'52px','font-size':'16px','font-weight':'500','box-shadow':'0 0 15px 1px rgba(0,0,0,0.05)'});
     }
     else {
       $('.privacytopbar').css({'height':'80px','font-size':'25px','font-weight':'900','box-shadow':'0 0 15px 1px rgba(0,0,0,0)'});
